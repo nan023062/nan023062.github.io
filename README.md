@@ -13,6 +13,7 @@
 - 个人技能和经验介绍
 - 社交媒体和联系方式整合
 - 现代化的UI动效
+- 专业文章专栏（AI/ML、游戏技术、个人理财）
 
 ## 技术栈
 
@@ -27,7 +28,17 @@
 PersonalHomepage/
 │
 ├── index.html          # 主页面
-└── README.md          # 项目说明文档
+├── README.md          # 项目说明文档
+│
+└── articles/          # 文章专栏目录
+    ├── ai-ml/         # AI/ML技术文章
+    │   └── index.html # AI/ML文章列表页
+    │
+    ├── game-dev/      # 游戏技术文章
+    │   └── index.html # 游戏技术文章列表页
+    │
+    └── finance/       # 个人理财文章
+        └── index.html # 个人理财文章列表页
 ```
 
 ## 快速开始
@@ -48,6 +59,12 @@ git clone [repository-url]
 - 个人简介：修改 Hero Section 中的内容
 - 作品展示：更新 Works Section 中的项目信息
 - 联系方式：更新 Contact Section 中的联系信息
+
+### 添加文章
+
+1. 在对应专栏目录下创建新的HTML文件
+2. 使用现有文章模板创建新文章
+3. 在对应专栏的index.html中添加文章链接
 
 ### 修改样式
 
@@ -90,6 +107,7 @@ tailwind.config = {
 - 图片资源使用了 [Picsum Photos](https://picsum.photos/) 服务，建议在正式使用时替换为自己的图片
 - 确保所有链接都指向正确的地址
 - 定期更新依赖的 CDN 资源版本
+- 文章内容建议使用Markdown格式编写，然后转换为HTML
 
 ## 维护者
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>李南 (Nave) - 游戏开发者</title>
+    <link rel="icon" type="image/x-icon" href="bitbug_favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script>
@@ -54,20 +55,102 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center px-6 pt-20">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6">李南 <span class="text-neutral-400">(Nave)</span></h1>
-            <p class="text-xl md:text-2xl mb-8 text-neutral-400">游戏开发专家 @ 上海心动网络</p>
-            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-12 text-balance text-neutral-300">
-                丰富的游戏系统设计与开发经验，专注于战斗系统、3C系统及模块化架构的深度研究与实现。
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#works" class="px-8 py-3 bg-white text-black rounded-full hover:bg-neutral-200 transition-colors">
-                    查看作品
-                </a>
-                <a href="#contact" class="px-8 py-3 border border-white rounded-full hover:bg-white hover:text-black transition-colors">
-                    联系我
-                </a>
+    <section class="pt-32 pb-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Personal Info -->
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">李南 <span class="text-neutral-400">(Nave)</span></h1>
+                    <p class="text-xl mb-4 text-neutral-400">游戏开发专家 @ 上海心动网络</p>
+                    <p class="text-lg max-w-2xl mb-6 text-balance text-neutral-300">
+                        丰富的游戏系统设计与开发经验，专注于战斗系统、3C系统及模块化架构的深度研究与实现。
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#works" class="px-6 py-2 bg-white text-black rounded-full hover:bg-neutral-200 transition-colors">
+                            查看作品
+                        </a>
+                        <a href="#contact" class="px-6 py-2 border border-white rounded-full hover:bg-white hover:text-black transition-colors">
+                            联系我
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="bg-neutral-900/50 rounded-lg p-6">
+                    <h2 class="text-xl font-bold mb-4">快速链接</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="articles/ai-ml/" class="flex items-center space-x-2 text-neutral-400 hover:text-white transition-colors">
+                            <i class="fas fa-robot"></i>
+                            <span>AI/ML 技术</span>
+                        </a>
+                        <a href="articles/game-dev/" class="flex items-center space-x-2 text-neutral-400 hover:text-white transition-colors">
+                            <i class="fas fa-gamepad"></i>
+                            <span>游戏开发</span>
+                        </a>
+                        <a href="articles/finance/" class="flex items-center space-x-2 text-neutral-400 hover:text-white transition-colors">
+                            <i class="fas fa-chart-line"></i>
+                            <span>个人理财</span>
+                        </a>
+                        <a href="#works" class="flex items-center space-x-2 text-neutral-400 hover:text-white transition-colors">
+                            <i class="fas fa-code"></i>
+                            <span>项目作品</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Showcase Section -->
+    <section class="py-20 px-6 bg-neutral-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Photo Gallery -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">照片橱窗</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="relative aspect-square overflow-hidden rounded-lg group">
+                            <img src="https://picsum.photos/400/400?random=10" alt="个人照片1" 
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="relative aspect-square overflow-hidden rounded-lg group">
+                            <img src="https://picsum.photos/400/400?random=11" alt="个人照片2" 
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="relative aspect-square overflow-hidden rounded-lg group">
+                            <img src="https://picsum.photos/400/400?random=12" alt="个人照片3" 
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="relative aspect-square overflow-hidden rounded-lg group">
+                            <img src="https://picsum.photos/400/400?random=13" alt="个人照片4" 
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Showcase -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8">视频分享</h2>
+                    <div class="space-y-6">
+                        <!-- Video 1 -->
+                        <div class="relative aspect-video rounded-lg overflow-hidden bg-neutral-800">
+                            <iframe 
+                                src="https://v.qq.com/txp/iframe/player.html?vid=m3528j69nyo" 
+                                allowfullscreen 
+                                class="absolute inset-0 w-full h-full"
+                                frameborder="0">
+                            </iframe>
+                        </div>
+                        <!-- Video 2 -->
+                        <div class="relative aspect-video rounded-lg overflow-hidden bg-neutral-800">
+                            <iframe 
+                                src="https://v.qq.com/txp/iframe/player.html?vid=y3528ke77us" 
+                                allowfullscreen 
+                                class="absolute inset-0 w-full h-full"
+                                frameborder="0">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -121,6 +204,56 @@
                         </div>
                     </div>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="py-20 px-6 bg-neutral-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">文章专栏</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- AI/ML Articles -->
+                <div class="bg-secondary rounded-lg overflow-hidden group">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img src="https://picsum.photos/800/450?random=5" alt="AI/ML" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">AI/ML 技术</h3>
+                        <p class="text-neutral-400 mb-6">探讨人工智能、机器学习的前沿技术和实践应用</p>
+                        <a href="/articles/ai-ml/" class="inline-flex items-center text-primary hover:text-white transition-colors">
+                            阅读更多 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game Dev Articles -->
+                <div class="bg-secondary rounded-lg overflow-hidden group">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img src="https://picsum.photos/800/450?random=6" alt="Game Development" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">游戏技术</h3>
+                        <p class="text-neutral-400 mb-6">分享游戏开发技术、架构设计和优化经验</p>
+                        <a href="/articles/game-dev/" class="inline-flex items-center text-primary hover:text-white transition-colors">
+                            阅读更多 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Finance Articles -->
+                <div class="bg-secondary rounded-lg overflow-hidden group">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img src="https://picsum.photos/800/450?random=7" alt="Personal Finance" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-4">个人理财</h3>
+                        <p class="text-neutral-400 mb-6">个人投资心得、理财策略和市场分析</p>
+                        <a href="/articles/finance/" class="inline-flex items-center text-primary hover:text-white transition-colors">
+                            阅读更多 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
