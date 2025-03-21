@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李南 (Nave) - 游戏开发者</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f5f5f5',
+                        secondary: '#1a1a1a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-balance {
+                text-wrap: balance;
+            }
+            .hover-link {
+                @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full;
+            }
+        }
+    </style>
+</head>
+<body class="bg-secondary text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-secondary/80 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">Nave</a>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/nan023062" class="hover:text-white transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.zhihu.com/people/supperlinan" class="hover:text-white transition-colors">
+                        <i class="fab fa-zhihu text-xl"></i>
+                    </a>
+                    <a href="#contact" class="hover:text-white transition-colors">
+                        <i class="fab fa-weixin text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-6 pt-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">李南 <span class="text-neutral-400">(Nave)</span></h1>
+            <p class="text-xl md:text-2xl mb-8 text-neutral-400">游戏开发专家 @ 上海心动网络</p>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-12 text-balance text-neutral-300">
+                丰富的游戏系统设计与开发经验，专注于战斗系统、3C系统及模块化架构的深度研究与实现。
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#works" class="px-8 py-3 bg-white text-black rounded-full hover:bg-neutral-200 transition-colors">
+                    查看作品
+                </a>
+                <a href="#contact" class="px-8 py-3 border border-white rounded-full hover:bg-white hover:text-black transition-colors">
+                    联系我
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">代表作品</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <a href="https://town.xd.cn/" target="_blank" class="group">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://picsum.photos/800/500?random=1" alt="心动小镇" class="w-full transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/60 flex items-end p-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">《心动小镇》</h3>
+                                <p class="text-neutral-300">休闲社交游戏</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="http://www.zhanjiuzhan.cn/" target="_blank" class="group">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://picsum.photos/800/500?random=2" alt="战就战" class="w-full transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/60 flex items-end p-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">《战就战》</h3>
+                                <p class="text-neutral-300">动作竞技游戏</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.taptap.cn/app/180780" target="_blank" class="group">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://picsum.photos/800/500?random=3" alt="荣誉指挥官" class="w-full transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/60 flex items-end p-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">《荣誉指挥官》</h3>
+                                <p class="text-neutral-300">策略战争游戏</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://store.steampowered.com/app/1163130/Oasis_VR/" target="_blank" class="group">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://picsum.photos/800/500?random=4" alt="绿洲" class="w-full transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/60 flex items-end p-6">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-2">《绿洲》</h3>
+                                <p class="text-neutral-300">VR虚拟现实游戏</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 px-6 bg-neutral-900">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">关于我</h2>
+            <div class="space-y-6 text-lg text-neutral-300">
+                <p>丰富的游戏系统设计与开发经验，尤其在战斗系统、3C系统及模块化架构方面有深入研究。</p>
+                <p>优秀的跨职能沟通能力，能够与策划、美术、音效等团队无障碍沟通合作，推动项目开发进度。</p>
+                <p>多年游戏玩家，熟悉MMO、ACT等游戏核心玩法，能够有效将策划意图转化为高质量的技术实现。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">联系方式</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">社交媒体</h3>
+                        <div class="space-y-4">
+                            <a href="https://www.zhihu.com/people/supperlinan" class="flex items-center hover:text-white transition-colors">
+                                <i class="fab fa-zhihu w-8"></i>
+                                <span>知乎：阿里郎</span>
+                            </a>
+                            <a href="https://github.com/nan023062" class="flex items-center hover:text-white transition-colors">
+                                <i class="fab fa-github w-8"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://gitee.com/nave_develop" class="flex items-center hover:text-white transition-colors">
+                                <i class="fab fa-git-alt w-8"></i>
+                                <span>Gitee</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">即时通讯</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fab fa-weixin w-8"></i>
+                                <span>微信：nan315774101</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fab fa-qq w-8"></i>
+                                <span>QQ：315774101</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">订阅号</h3>
+                        <div class="flex items-center">
+                            <i class="fas fa-newspaper w-8"></i>
+                            <span>公众号/视频号：游戏萝卜</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 bg-neutral-900">
+        <div class="max-w-4xl mx-auto text-center text-neutral-400">
+            <p>© 2024 李南 (Nave). All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
